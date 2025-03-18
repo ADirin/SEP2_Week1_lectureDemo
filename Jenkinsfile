@@ -4,14 +4,14 @@ pipeline {
             // Define Docker Hub credentials ID
             DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
             // Define Docker Hub repository name
-            DOCKERHUB_REPO = 'amirdirin/week7_inclass_test1'
+            DOCKERHUB_REPO = 'amirdirin/sep2_week1_inclass_demo'
             // Define Docker image tag
-            DOCKER_IMAGE_TAG = 'latest_v1'
+            DOCKER_IMAGE_TAG = 'latest'
         }
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ADirin/SEP1_Week7_Spring2025_Inclass_solution.git'
+                git 'https://github.com/ADirin/SEP2_Week1_lectureDemo.git'
             }
         }
         stage('Build') {

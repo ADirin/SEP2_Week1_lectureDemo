@@ -21,7 +21,7 @@ public class TripCostCalculator {
         Locale locale;
         switch (choice) {
             case 1:
-                locale = new Locale("fa");
+                locale = new Locale("fa", "IR");
                 break;
             case 2:
                 locale = new Locale("fi", "FI");
